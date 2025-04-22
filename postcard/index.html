@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人明信片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+        .card {
+            width: 300px;
+            border-radius: 20px;
+            background: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /*  CSS 属性指定可替换元素（例如：<img> 或 <video>）的内容应该如何适应到其使用高度和宽度确定的框。 */
+            object-fit: cover;
+            border: 4px solid #2575fc;
+            margin-top: 15px;
+        }
+        h2 {
+            margin: 10px 0 5px;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+        .link {
+            margin-top: 15px;
+        }
+        .link a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2575fc;
+            font-size: 20px;
+        }
+        .link a:hover {
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://picsum.photos/200" alt="picture" class="avatar">
+        <h2>我的明信片</h2>
+        <p>这是我的明信片</p>
+        <div class="link">
+            <a href="#">微博</a>
+            <a href="#">微信</a>
+            <a href="#">小红书</a>
+        </div>
+
+    </div>
+</body>
+</html>
